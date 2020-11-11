@@ -16,15 +16,15 @@
 /*}*/
 
 /* Header/logo Title */
-.header h1{
-    padding: 10px;
-    width: 100%;
-    /*text-align: left;*/
-    background: violet;
-    color: white;
-    /*display: grid;*/
-    grid-template-columns: 30% 70%;
-}
+/*.header h1{*/
+/*    padding: 10px;*/
+/*    width: 100%;*/
+/*    !*text-align: left;*!*/
+/*    background: violet;*/
+/*    color: white;*/
+/*    !*display: grid;*!*/
+/*    grid-template-columns: 30% 70%;*/
+/*}*/
 
 
 /*.menu {
@@ -51,12 +51,12 @@
 }
 
 
-.main {
-    /*grid-column: 3/7;*/
-    /*grid-row: auto;*/
-    /*border: 1px dashed grey;*/
-    padding-left: 20px;
-}
+/*.main {*/
+/*    !*grid-column: 3/7;*!*/
+/*    !*grid-row: auto;*!*/
+/*    !*border: 1px dashed grey;*!*/
+/*    padding-left: 20px;*/
+/*}*/
 
 .right {
     /*grid-column: 7/9;*/
@@ -64,8 +64,7 @@
     /*background-image: url("images/fish.jpg");*/
     /*background-size: cover;*/
     display: flex;
-    background-image: linear-gradient(45deg, #ff8f29,#243fff);
-   /* background-position: center;*/
+    border: 1px solid;
 }
 
 a {
@@ -139,14 +138,6 @@ li:last-child {
     padding: 10px;
 }
 
-.right {
-    width: 20%;
-}
-
-.left {
-    width: 65%;
-}
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -165,9 +156,13 @@ table{
     width: 100%;
     border: 1px solid black;
     text-align: center;
+    font-size: large;
 }
 td, th {
     border: 1px solid #0c0c0c;
+}
+th{
+    font-size: xx-large;
 }
 @media only screen and (max-width:800px) {
     .column {
