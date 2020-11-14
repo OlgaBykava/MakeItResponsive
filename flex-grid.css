@@ -3,45 +3,6 @@
     font-family: 'Sriracha', cursive;
 }
 
-/*body{*/
-/*    background-color: peru;*/
-/*    display: grid;*/
-/*    grid-template-rows: auto auto auto;*/
-/*    !*min-height: 100vh;*!*/
-/*    !*height: 100%;*!*/
-/*    width: 100%;*/
-/*    margin-top: 20px;*/
-/*    margin-right: 20px;*/
-/*    margin-left: 20px;*/
-/*}*/
-
-/* Header/logo Title */
-/*.header h1{*/
-/*    padding: 10px;*/
-/*    width: 100%;*/
-/*    !*text-align: left;*!*/
-/*    background: violet;*/
-/*    color: white;*/
-/*    !*display: grid;*!*/
-/*    grid-template-columns: 30% 70%;*/
-/*}*/
-
-
-/*.menu {
-    /*grid-column: 1/3;*/
-    /*grid-row: auto;*/
-/*    border: 1px dashed grey;*/
-/*    border-radius: 5px;*/
-/*    text-align: center;*/
-/*}*/
-
-
-#nav{
-    /*text-align: justify;*/
-    display: flex;
-    justify-content: center;
-}
-
 .container {
     display: grid;
     grid-template-columns: auto;
@@ -57,14 +18,17 @@
 /*    !*border: 1px dashed grey;*!*/
 /*    padding-left: 20px;*/
 /*}*/
-
-.right {
+.colum.left{
+    width: 60%;
+}
+.colum.right {
     /*grid-column: 7/9;*/
     grid-row: 1/3;
     /*background-image: url("images/fish.jpg");*/
     /*background-size: cover;*/
     display: flex;
     border: 1px solid;
+    width: 30%;
 }
 
 a {
@@ -123,17 +87,17 @@ li:last-child {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 100px) {
-    .column {
+    .colum {
         width: 100%;
     }
     img {
         margin: auto;
-
+        max-width: 100%;
     }
 }
 
 /* Create two unequal columns that floats next to each other */
-.column {
+.colum {
     float: left;
     padding: 10px;
 }
@@ -151,6 +115,10 @@ img {
     height: auto;
     max-width: 100%;
 }
+#schedule{
+    text-align: center;
+    padding-bottom: 2%;
+}
 
 table{
     width: 100%;
@@ -164,9 +132,63 @@ td, th {
 th{
     font-size: xx-large;
 }
-@media only screen and (max-width:600px) {
-    .column {
+@media only screen and (max-width:800px) {
+    .colum {
         width:100%;
         height: auto;
+        flex: 100%;
+    }
+    img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .colum {
+        width:100%;
+        height: auto;
+        flex: 100%;
+
+    }
+    img{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width:480px) {
+    th{
+        font-size: 5vw;
+    }
+    td{
+        font-size: 3vw;
+    }
+    img {
+        width: 100%;
+    }
+    p{
+        font-size: 3vw;
+    }
+    button{
+
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    th {
+        font-size: 4vw;
+    }
+
+    td {
+        font-size: 3vw;
+    }
+    .colum {
+        width:100%;
+        height: auto;
+        flex: 100%;
+    }
+    img{
+        width: 100%;
     }
 }
