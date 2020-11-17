@@ -41,7 +41,7 @@ body {
 .navbar {
     display: flex;
     background-color: #333;
-    background-image: linear-gradient(to right, #243fff, #ff8f29);
+    background-image: linear-gradient(to right, #00008A, #A6124B);
 }
 
 /* Style the navigation bar links */
@@ -54,7 +54,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #f87f7f;
     color: black;
 }
 
@@ -103,11 +103,11 @@ img {
 
 /* Footer */
 .footer {
-    color: black;
+    color: white;
     padding: 20px;
     text-align: right;
     background: #ddd;
-    background-image: linear-gradient(to left, white, #3333ff);
+    background-image: linear-gradient(to right, #00008A, #A6124B);
 
 }
 
